@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        /* align-items: center ; */
+    }
+
+    #btn-yes,#btn-no{
+        transition: 0.2s linear;
+        background: blue;
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 10px;
+        border: 0;
+        position: absolute;
+        left: 45%;
+    }   
+    #btn-no{
+        background-color: red;
+        left: 50%;
+    }
+    h1{
+        font-size: 60px;
+    }
+
+    @media (max-width:400px) {
+        #btn-yes{
+            left: 35%;
+        }
+        #btn-no{
+            background-color: red;
+            left: 52%;
+        }
+        h1{
+            font-size: 50px;
+        }
+        img{
+            width: 340px;
+        }
+    }
+</style>
+<body> 
+    <div class="container">
+        <div class="box">   
+            <img src="https://media3.giphy.com/media/YKUvclrGYmDKXwtphf/giphy.gif?cid=6c09b952a89ozjne3cb55youlkm4p7kbjbxs4palddhafwha&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=shttps://media3.giphy.com/media/YKUvclrGYmDKXwtphf/giphy.gif?cid=6c09b952a89ozjne3cb55youlkm4p7kbjbxs4palddhafwha&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="">
+            <h1>Do you love me ?</h1>
+
+            <button id="btn-yes">Yes</button>
+            <button id="btn-no">No</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
